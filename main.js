@@ -1,1 +1,23 @@
-let mail = ["pippo@gmail.com", "pinco@gmail.com", "pallino@gmail.com", "pepe@gmail.com", "pluto@gmail.com", "topolino@gmail.com", "minni@gmail.com"]
+let mail = ["pippo@gmail.com", "pinco@gmail.com"];
+
+
+const inputMail = document.getElementById("exampleInputEmail1");
+
+
+function iscriviti() {
+    let valueMail = inputMail.value;
+    console.log(valueMail);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
