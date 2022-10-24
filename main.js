@@ -12,10 +12,11 @@ function iscriviti() {
         // console.log(mail[i]);
 
         if(mail[i] == valueMail){
-            console.log("Successo");
+            // console.log("Successo");
+            document.getElementById("rispostaSistema").innerHTML= `<div class="iscritto">Risulti essere iscritto</div>`;
         }
-        else{
-            console.log("Fail")
+        else {
+            document.getElementById("rispostaSistema").innerHTML= `<div class="nonIscritto">Non sei iscritto</div>`;
         }
     }
 }
