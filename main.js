@@ -1,0 +1,1 @@
+let mail = ["pippo@gmail.com", "pinco@gmail.com", "pallino@gmail.com", "pepe@gmail.com", "pluto@gmail.com", "topolino@gmail.com", "minni@gmail.com"]
