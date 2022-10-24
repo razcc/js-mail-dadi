@@ -37,25 +37,73 @@ function iscriviti() {
 // ^-----------------DADI----------------
 
 
-// ^Genera numero Utente e lo stampa
+
+
+// ^Inizializzazione Arrey
+    let partiteVinteUtente = [];
+    let partiteVinteComputer = [];
+    console.log(partiteVinteUtente);
+    console.log(partiteVinteUtente);
+
+
 function generaNumeri() {
+
+    let variabile = 0;
+    variabile = variabile + 1;
+    // ^console.log(variabile);
+   
+
+
+    // ^Genera numero Utente e lo stampa
     let numeroRandomicoUtente = Math.floor(Math.random() * 6) + 1;
     // ^console.log(numeroRandomico);
-
     document.getElementById("numeroUtente").innerHTML = numeroRandomicoUtente;
+
+    // ^Genera numero Computer e lo stampa
     let numeroRandomicoComputer = Math.floor(Math.random() * 6) + 1;
     // ^console.log(numeroRandomico);
-
     document.getElementById("numeroComputer").innerHTML = numeroRandomicoComputer;
+
+    // ^Condizione Vincitore Pareggio
     if (numeroRandomicoUtente > numeroRandomicoComputer) {
         document.getElementById("vincitore").innerHTML = "Utente Vince";
     }
-    else if(numeroRandomicoUtente == numeroRandomicoComputer){
+    else if (numeroRandomicoUtente == numeroRandomicoComputer) {
         document.getElementById("vincitore").innerHTML = "Pareggio";
     }
-    else{
+    else {
         document.getElementById("vincitore").innerHTML = "Computer Vince";
     }
+
+
+    // ^Quante partiete hanno vinto Giocatore e Computer
+    for (let i = 0; i < variabile; i++) {
+
+        if (numeroRandomicoUtente > numeroRandomicoComputer) {
+            partiteVinteUtente.push(i);
+            // console.log("utente arrey");
+            // console.log(partiteVinteUtente);
+            // console.log(partiteVinteUtente.length);
+            document.getElementById("partiteVinteUtente").innerHTML= partiteVinteUtente.length;
+        }
+        else if (numeroRandomicoUtente == numeroRandomicoComputer) {
+
+        }
+        else {
+            partiteVinteComputer.push(i);
+            // console.log("computer arrey");
+            // console.log(partiteVinteComputer);
+            // console.log(partiteVinteComputer.length);
+            document.getElementById("partiteVinteComputer").innerHTML= partiteVinteComputer.length;
+        }
+
+
+    }
+
+
+    // console.log(variabile);
+
+
 }
 
 
